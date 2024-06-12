@@ -53,6 +53,10 @@ button {
   box-shadow: 3px 5px #c5c4c4;
 }
 
+.casestudybutton:hover{
+  background-color:dimgrey;
+}
+
 /* UX SKILLS */
 .skillstitle {
   background-color:#000000;
@@ -63,6 +67,16 @@ button {
   display: grid;
   height: auto;
   width: 100%;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: 'skillsLeft skillsRight';
+  margin: 10px 0px 10px 0px;
+  column-gap: 20px;
+  justify-items: center;
+  align-self: center;
 }
 
 /* CASE STUDIES */
@@ -92,7 +106,30 @@ button {
   margin: 0 auto;
   display: block;
 }
+ /*CONTACT FORM */
 
+.contactgrid {
+  display: grid;
+  padding-top: 50px;
+  height: 500px;
+  justify-items: center;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "contactleft" "contactright";
+}
+
+.contactsubmitbutton {
+  width: 150px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.contactsubmitbutton:hover {
+  background-color: #7e7e7e;
+}
 
 /* FOOTER */
 footer {
